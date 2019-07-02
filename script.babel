@@ -1,0 +1,18 @@
+function Person(props){
+  return(
+    <div className="person">
+      <h1>{props.name}</h1>
+      <p>Bio: {props.bio}</p>
+    </div>
+  );
+}
+
+var app = (
+  <div>
+      <Person name="Abed" bio="Cool, Cool cool cool"/>
+      <Person name="Troy" bio="The Truest Repairman"/>
+      <Person name="Britta" bio="The Buzz Killer"/>
+  </div>
+);
+
+ReactDOM.render(app, document.querySelector('#app'));
